@@ -3,7 +3,7 @@
 
 # Personal blog
 
-> Describes a simple blog using django framework. Initially project is based on [Django Full Stack Udemy training](https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp).
+> Describes a simple blog using django framework. Initially the project is based on [Django Full Stack Udemy training](https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp).
 
 ## Tools
 
@@ -29,7 +29,7 @@ TBD
 git clone git@github.com:vyahello/django-blog.git
 cd django-blog
 pip install -r requirements.txt
-python blog/manage.py runserver
+python web_site/manage.py runserver
 ```
 
 Then please open `http://127.0.0.1:8000` endpoint in the browser.
@@ -52,9 +52,10 @@ DB migration is performed in case of table changes (e.g new field or column adde
 
 Please follow the next instructions to migrate DB:
 ```bash
+cd web_site
 python manage.py migrate
 python manage.py makemigrations app
-python manage.py migrate  # (one more time)
+python manage.py migrate
 ```
 
 ### Meta
