@@ -1,0 +1,22 @@
+# Pycharm trash
+.idea
+__pycache__/
+
+# virtualenv
+.venv
+venv/
+venv
+
+# Distribution
+.DS_Store
+.cache/
+*.db
+
+# python identifiers
+.python-version
+.pytest_cache/
+
+# pypi assets
+dist/
+build/
+*.egg-info
