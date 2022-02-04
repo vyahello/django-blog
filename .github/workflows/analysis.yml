@@ -19,3 +19,4 @@ jobs:
       run: |
         pip install -r requirements-dev.txt
         black --check web_site
+        isort web_site --check-only --verbose
