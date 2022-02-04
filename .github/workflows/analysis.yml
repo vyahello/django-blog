@@ -7,6 +7,7 @@ jobs:
       max-parallel: 4
       matrix:
         python-version:
+          - 3.6
           - 3.7
           - 3.8
     steps:
@@ -18,5 +19,4 @@ jobs:
     - name: Static code analysis
       run: |
         pip install -r requirements-dev.txt
-        black --check web_site
-        isort web_site --check-only --verbose
+        ./code-analysis.sh
