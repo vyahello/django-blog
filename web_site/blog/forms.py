@@ -1,11 +1,17 @@
-from blog.models import Comment, Post
 from django import forms
+
+from .models import Comment, Post
 
 
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = 'authors', 'title', 'text'
+        fields = (
+            'author',
+            'title',
+            'text',
+        )
+
         widgets = {
             'title': forms.TextInput(attrs={'class': 'textinputclass'}),
             'text': forms.Textarea(
@@ -17,7 +23,11 @@ class PostForm(forms.ModelForm):
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
-        fields = 'author', 'text'
+        fields = (
+            'author',
+            'text',
+        )
+
         widgets = {
             'author': forms.TextInput(attrs={'class': 'textinputclass'}),
             'text': forms.Textarea(
