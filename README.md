@@ -4,7 +4,7 @@
 
 # Personal blog
 
-> Describes a simple blog using django framework. Initially the project is based on [Django Full Stack Udemy training](https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp).
+> Describes a simple blog using django framework. Inspired by and based on [Django Full Stack Udemy training](https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp).
 
 ## Tools
 
@@ -23,7 +23,7 @@
 
 ## Usage
 
-TBD
+![Usage](demo.gif)
 
 ### Quick start
 
@@ -31,7 +31,8 @@ TBD
 git clone git@github.com:vyahello/django-blog.git
 cd django-blog
 pip install -r requirements.txt
-python web_site/manage.py runserver
+cd web_site
+python manage.py runserver
 ```
 
 Then please open `http://127.0.0.1:8000` endpoint in the browser.
