@@ -6,7 +6,7 @@ from django.utils import timezone
 
 
 class Post(models.Model):
-    """User post model."""
+    """User post model (post table)."""
 
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
@@ -33,7 +33,7 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
-    """User comment model connects to the user post model."""
+    """User comment model (comment table) connects to the user post model."""
 
     post = models.ForeignKey('blog.Post', related_name='comments')
     author = models.CharField(max_length=200)
