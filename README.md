@@ -1,3 +1,5 @@
+![Screenshot](media/logo.png)
+
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
@@ -23,7 +25,7 @@
 
 ## Usage
 
-![Usage](demo.gif)
+![Usage](media/demo.gif)
 
 ### Quick start
 
@@ -43,10 +45,10 @@ Then please open `http://127.0.0.1:8000` endpoint in the browser.
 
 Please follow the next instructions to create fresh app:
 ```bash
-django-admin startproject project_name
-cd project_name 
-django-admin startapp project_app
-python app/manage.py createsuperuser
+django-admin startproject web_site
+cd web_site
+django-admin startapp blog
+python manage.py createsuperuser
 ```
 
 ### DB migration
