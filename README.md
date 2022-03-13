@@ -27,6 +27,8 @@
 
 ![Usage](media/demo.gif)
 
+> Please check http://djangowebblog.pythonanywhere.com deployed app.
+
 ### Quick start
 
 ```
@@ -85,3 +87,7 @@ If you are interested to add your ideas into project please follow next simple s
 6. Commit your changes (`git commit -am 'Add some fooBar'`)
 7. Push to the branch (`git push origin feature/fooBar`)
 8. Create a new Pull Request
+
+## Deployment 
+
+Please follow [instructions](https://github.com/vyahello/django-login-template#deployment) to deploy app on pythonanywhere
